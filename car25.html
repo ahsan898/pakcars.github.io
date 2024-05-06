@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Cars - Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Changed background color */
+            color: #333; /* Changed default text color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+            background-color: #444; /* Changed background color */
+            border-radius: 5px; /* Added border radius */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease; /* Added transition effect */
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Changed color on hover */
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-image img {
+            width: 90%;
+            height:650px;
+            border-radius: 5px;
+        }
+
+        .product-description {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .product-description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333; /* Changed heading color */
+        }
+
+        .product-description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666; /* Changed paragraph text color */
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>PK Cars</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUQExIVFRUVEBUPDxYVFRUVFRUXFRUXFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMkA+wMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwEEBQYAB//EAEQQAAIBAgMEBgYIBAQHAQEAAAECAAMRBBIhBRMxUQZBYXGBkSIyUqGx0RQVQmKSweHwI3KCokNTwtIWM2Nzg7Lik1T/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QALREAAgIBAwQCAQIGAwAAAAAAAAECEQMSEyEEMUFRFGEiBUIVUnGR0eEyYrH/2gAMAwEAAhEDEQA/AKgEYElgUYQozneRHtrAxIpSd1LIpQhSMXcQ6wP0VN3I3cu7qe3UG4h1hfoo7qRupobuQUi7hRYClu4JpmXSkgpBuDbBQKGeyGXd3PbuDdG+OiiUMEoZf3cnJBuhXTIzrGELy8aQ5QGowbiYVhaKwhARm6kZIHJDqDICSQkNVjAkRzKqCFgQwkMU4xVk3MdY0LCRipGqkYEk3kKaUJVY5IYSGtOTczWkeWMVZ5acaqwaycpEBYYSGix6U4ykRlOiuKUncy2KM9uZRMluHOilCFKJXFdkclYTqcZCrJH0Tu54rDDSCt4tDqfpAXE9FvRMUQRNpXsOt+izpPWiFaNUwOIVkfokpFsI2eyxeBtT9FYuIJqiWGw4MU2Em1RN+foUawkCtC+jQhQh1RDpyAir2Qw4krRjlpCI5RDUxNhykZZa3cgpFbQ0XIq2hqsdu57cxXJFFYAEYFkimZIvJtj2SEjFWEhjltEZOUgAsNUhiMWKScgFWFljQJ4iEnqFARtMmDaEILoDdllakZnEqiTDuMi4o5hFEctKKVY5GnqSbDFIIUoxQRJVo1ZGUiygQpEZugZAEICScilC2wYimwhEuBjDWpzEXWwdjPFIwwk0RlMg0VMRzYVkRRCQsksGhPBJNyDrK+6EBsPLuWTkiuZtyjONOeCzR3UFsNBuB3l5KVp7LHNhzBFIzbg+pCrSQI8U4xaEGsVzQpKd45MKIxaEcimZTXkjLJ6ZVfCSuUImqVMB6EzmgRzeygjQs5jTSEhsPF1D6onlqGEHkLhmhbswahXpCDQwhi0jw8KEl9C7QrwXr9kG8NGp+THyz2WOCwsk9bUTUSuIxWh7uCaURtMpFtBh4WeVzTME3k3EqpX4LYqQt7KQcxi1JNoZUWxUhCpK6tGCRZmkPFSFcRAhhpNtiOI2QTAzSC8W2Cgi5kb0wDUEA1BFf9BlEsLVMajX6hKW+ENcRBQHAvZRykhRKm9nt5BwT0MtkiSGtKW8kHE2go202aK1ZJcGZwxMIYiGmK8LLqhYYKykK8k1gYVGxXjZb3g6jAdTKoqDnJNeNoDorsMyGTuok4iCcUecbSxqY4qIN5X3phZxzhpobSKKiDpIzSCJ6jic6ySDAE9aLsZGYybgUjl9obPZREFoO8MR42UWQsGmJG6ilrQxVkZRkiqlfYMU4WSCtaFvJB35DyEJJEUagkGpCoivg9UvFFoTPK9SOkFMaTAcyszGQXMOljhtVnlxIlWoTEEyixpiudGsMVGLiRMZCY+m0nLCgqVmrv8Atng4maKghbyJshtGjmHOQaglAVoQrw7dC6i4a88KkqrWEPfw9hXBstgzzMecomqecEsYyFeNlqo/bFb+Ktee3Ue0DaY5cSYzfSoVkZ4aTBpaNQ5eOdfOFuTxGvdOYZuorBoYqrT9RiBy4jyntS6N+GeNHrVfKOoNMwTSM5l9o1z/AIh90gbSrg3znxAk30U/aKLrsfpnTbgwTRPKc9U2zXPWB3CNw236i6OA3bwMlLo8teCsetxX5NkoeUE90r/X9LKTZr8rfnMyjt9s93UZD1DiPnJLpcjvgq+rxxr8jYLT29lU7Zoc2/CZXq7Zo30DHttF+LJ/tY/zIr9yLz1Ihqx5xFTaNK183hbWZ9baw6lJ79JSHTS9Ep9VH2an0lhPfSzMentUfaW3cY76wpe1bvjPpX5QI9UvEjROJvIV5kVNrUh1k9wlSpt/2U7rmBdHJ9kN8+K7s6FjeKasq6sQB2kTk8TtOs9wWsD1DSUShPEk95lo9D7ZCf6kr/FHW19vYdeDFjyUQR0iw/NvwmcoKUndyvwcf2R/iWX6OhxHSdR6iE9+gkYfpQPt0yOeXUTAFOTuo3wsVVQn8QzXdnTDpJRPUw8JWxHScA2RCR1k6eUw91J3UC6LEvBn+oZn5OnodIaLcSV06x+ccu2qB/xROR3UjdRX0GMov1PL5SO4o4tHF1cHxj99OAFMjhcd0tUdo1k0DXHI6yUv0/0y8P1T+ZHbDEiQ2KnLYfbrXAdRbrI4zcpgMMym4M5p9Jo7nXj6xZF+JaOI7ZG+lU0jI3cG0h91lzEYqioLF10466+UrLtHDsBZxc9R0nGtr1iJNv2J77kfKJs+g7tGAZDdbcdPGC1Acjf3TiaGPqhN2pNifHwmp9a4k5QiAGwXgzFiOv8ASLuR7FEnVm8aHZFvhuQmFXx2NU5T6J5FCD5GVztfF+0PwwbkAcm82EMBsGZjjbWK7D/TH4PaWNqGyURU55VNh3kaDxh1xMXTgjB+iGefa+7JGJahSYAEoKm8qa/dQEe+Lo9J0JcUsO9fNTKAsMipf7a2OYNyYiwmb9BtLuNGEYxTYQwF2hjSNMPRT+Zs58b/ACkfWOOXXJSP8q0h8Vj6JeiT6jH7/wDP8nmwkU2Elqj0mrA5XGU/yAeI01HlNTC4+pU4V17jTt+c2iT7GefH5v8At/sxaGyHcMyKSEXO5H2RzMr/AESdWgcX/iLqLH+GpBHI857dnnR//BB8BBtzN8jF7Zyf0We+jTqjhz1LRP8A4/1g/QFbVkQHs3g+FS02iXo29j9nL/RpH0edK+wKbcHZf6tPIgn3ypiOi9Ya06i1Oy+RvJtPfBTXcZTi+zMYUJO4gY13onJVDoeoMpF+6/HwlcbUp2bM73t6Fl4nkYG6HirdFvczwoTJO0U5OfCLfbCj7LzWgWbe4krhbmwt5iYB219xuzWB9cH2D5wakE6LcHlAahMQbacfYPmY1duvw3bcNbawaohNI4fshU1dfVZgOwwMPt3Dbhi4qivvF3YAXd5LekWPG97+7tk0tsUSPWt3wJqVhvSWKOKrLwa/frNCntXQXXXrtwmR9bUbXzCVl20vWViyxQfcrHqJx7MmhkuCeF9RNGpVw2lhrbXvsfztFjC0eGsg4Cjf1jGdM5VZYwVJXqgLbjceBB+F51eBps1O6AoCS1MAAtYm4Y3XQ9donoZsemEeuX1JNJLEZlsLswBBF72GvIzU2ptWnTAp7wA8LE+ke885XHFd7IZMkv8AijDxDY8XzDOQRkbNQDacgzD3zn8bUcFnriqLg5v4a2J5GqhZUHaZ0pq5jxguqqLlrdQ6ySeAAGpJ5CO4RYqyTXgz+jGy98u9IpKgOi03TE1Db2qhui/0qDNbEYlnJpqCqLpqTqdOs3JFj5icVtrbGGpVCaYIrXN3osAwPJzqp7vS7bGWdjdNA5C1/QPDP9k/zeye3h3TQ0RdBnHJNXRT6YbMG9p1j6hK0qx6l19FifE+Q5zf6M0g9CkoAUItqwGhNRTlbNza4JPh1GazUUqLawZWHeCD8YOEo7rRCbE3IOvUBe51JsBqb8JSKSlqIzk5Y1F+CricVTUlctRraEooYX5XvEfWNIEf8xTcWJS1u24MnanR3C4hjUelZ29ZlYqTbS54gn+mcr0o6P0sNSDU6lUl3FNFZltwJPAa8PfBLJkXPgEMOKVLmzqNrKDTLP6fs8Lljotjz7ZlYYOhs3rAAnqDDmJs4kJnpgsopqt19IekToMqjUgDrtb0hLGMpUTlYklhqLEL4WNyR5R5ST5Jwg0qF4WrmFxx65bR+cxzWVb+hpcE+nUB8DTZSPf3S3RrYVwLtUosdBnr1WQ91TNp/Uom1h2maQEfR7Zm18IaY1NUA8GDhge5iCJVAtwxGIHf9HYeW5Hxg1fRtH2dEFkqh6h5TB39YeriEP8A3KP5o4+EkbRxQ4Cgx7C49xP5zWbSbtRMwKsAynirAMD3gzndq9D6FS5TNRb7vpJ+E/kRLKY3HNrbDDW3puQfMvAqnaHFWw3at1Pkd7Ekk+6KxlJdmcfjuiOKpn7LJ7YzED+YKCy99rdsWvR+tbNlVwR6JpurLfw4eM7PD7Wxqn06aG3HJSqE+H8SxmmmBpVRvKjFKhN70ae6Y/8AcBdlfxFxIzx8cHRjyN9z5ynR/EHTd2vqpJHfaX6WxMYgFbIoDAq2qEW7r3nc1Nj0WC2q1VIN7/wzfq1GUTktudG6yHMlTMpJI0y+AsSL+U51jyPukUckvJz9Zja7eiUItp28Y0Yh2qBmqNmdALgKLjla1pm4kMpKuSD1g3vAp1QSLHgI/HkPJedqS5lN7gDLwuTfXWUC1Kw9e/2rWt4SXp3N7z26jJo3J5Wode8twXQX8Z5RQ695frsBPZBJCjt8obRuTq6mzABc1AJGG2arcKl+vnDqYZmFm9IeUmjS3eiKRzN7yTsGo06G0BhMNWbOCVXPTB0DMdLX6je3fOIp4Ral62JfNVexs2ZiMxsvorwXzPIWsTr7XpuwVG4M4v25SG+AaUsXWUuziwbdbymlrZwVDUHHaugYc1v16PfA8Irua/R7EtTdsNU6hmpG+a68g32haxB5d06SoquhptqGHfbke8Gxnz6riChNW991iSq/9s307vRf8c7enWBsRwOoh1AcLPnfSfZJo1CbWVj4BuJA7CNRMmkdZ9G6RbPWsuaxLhStha7rxya9d9V7e8z5zWp5Wte/Wp4XHUf3wNx1RX3sdcHT7B27XR1RFQqScyWyqeslQNFbQ8BryM7iht3Dta75Gtqrgi39Vre+fLcC9mDX4aiaaPfWNraBLFGR9NoVEf1HVv5WDfAwa+DRipdQcp6+R4jxtPnStL9DaFReFRx2Bjb8JNvdH3vZH4/pm/0w2pSwlIrTppvGNqIsLAHW9h1DUDunCLs/EVLVKlRgzElQXVDpxIzMBbj6t7WlzEYg1sQatRmqLh6Wb0rKWPIZAOJ001sL8Y3FoXxGlg1M5GHormpFf4FRf6SikDkp69JN2WhChmyMa6uMPWN7i9JzqTyBP2gbGzdduJmxUocvgCPIzmQqimKIN7VCuHfnUQBqjjmHZqaKPuqeN51OGqlqaVSrBXQMCVIXUdRIsYylQksdisPtN6PojOt7gZCGQ39qk+n4WXuh0ukGGqmzeg3WUBH4qTajwuO2MeirixAI8xOf+hmjWJqIKtIksQSys3ZmXUEdR4aDQjSUU2+xB415OlNAkZkYOvNTqO9eIikqxOG2SlUhsDXO8/8A56xCVv8AxOLLV8MrfdiHxdRWKVqZDA2a4yODyOlr9hF46mTeNo01rnnLle9lqJkyMNAwrMwYaMCRVF9ezgRMRawPA37ODeXyl3AYoFXp3/6id68R4r8IbTEpoPErUcWFVaenFFckdvp1GlWjgMSpuMaxPUCiW8bCPGJ7YxMaecbSga2iaO26lPTEU7D/ADad2TvYcV983sPikqLoQ6sOIIIPcRMZcaDo3w+MrNg8jZ6LbtjqQNab/wAycD3ix7ZtIVMt7Q2VTYlHTPcfwmByvfqUNwv1a3GonG47BKrZVbMLBh6OVgG1AYdR/fYOxo7Tz/wqoyOfVN7ox5o3P7p175W2t0fWshxNEEV/SOIpg3FYILu1MdVVdalvtBm6xrDMlVnRhk+xwOOrbvS0pU8ebzUqYUk6i99QRqCDqCOyIqUlH2Ne6c1nQNphmFxwh/R2lRA/LTqjEd7cDNYbO2TErxv3wzilvYOB39c6pui2EOudh3MtoFXojgjxY355heW2Jk1lh5RyeKyMVswYgubceFKoROfxgpu+6Bd3pL9mktk19U1Q6WAJIN1OptrPoG1Nh4ejSNRKjXp2YksPVvapqBochbWcXRp7tqlMhUIbMqIDbIrgMWJuWLAjUk+i1ha5E2hx7jxkmuCltrCKlEuEq0yciMrgBdN4QRrfMRqRa3pGx6pZ2VtxVo0w97hAt+OimwPunP7UqrlUjRqgV6gta2VcgH/sfESsa6kBfSFhYahvdpFGfc+gUdqUXFg6m/VcA+RmL0k2YHzVA3AZus25sPu+13Zvaty6UyfVYEcdSFI7wTL2FFYWKONNRlrU7jwzXHlMkzOjo+g+CWpTdXpoxWqQQwVjYgEG/LjqOU6Or0ZwzcFZD9xj8GuJwTrV0LYUMRwZEdGHcaLAe6WaG1qqXs2Lp97iqo7lqIPjKqUapoi4Tu4s6Wv0PP8Ah1gex1K+8X+EytobHr0VLuoyj7SkMOztECj0yqgf8+m3PfUHQnxosw900H6TirTKPSRwx/w6yaWsQQtTK17jhbxgag+xovInyZfRzDFqdU8S9enTGlz6t7gEEHjy6oGMw6lkfeUs6ruyEqpmOh9B6ZYnMOGZWYaCaGDxiuMTTdairuUqsgyozBbq7Ahj6NiLi+tpSFBKNMotIgmqtD+IUds1QkC5AAChRfKBrmUEkXAm1ydEZfiU65VVp18gKipu0AOYhxUZnzG2VbkaaEkKLWsSLuzMdURGppUdQrvTsrsosGPI9sCpVpCqmSoyIaZbdsgqUGRPSPBgVuED3toSDeH0f2QalLes5Uu5caX04X8bExWm1wFSSdsr1KpBuCQew2lDH7TqWC5ydb62PDvm/iOjzdVUeKn5zAx+wa4Y+qw5gn4EQRjJCzyQYzAYyo4sRTtcKPQAJPVbKRrPpuGBShbajp/y/wCArZmxo09EZgQVTsq37BOU6O3p0wEenh6mqmrkNSvl5U2Y5aPeup6z1TWwmEwNI76sWrH1navUuCeZWwHneaeRx9kuCrWxuzCPWrqf5ab/AAdJVxOJwiLvUxFQ21AegVufZzKxGvbLG0enqsTQwWHpAk23jKAoHMXtoOZsO+cjtLaAViz1DXrkWLNpTS/EInUO0gdy8Ycc5vlqgOERp6S2NmpnvVgR3i4EIdJKR4hx4D8jOZq1SxLE3JgHx8v1j7khdqJ19PpFSH2z4ox8xYgxtPpNSGm80/lfTu0nFafsfrJAHM+X6w7shdmJ2OI6VUSCuVqgPEWAHv8AlNbox0lBs1U1UppVSojUhvau8FxTW5yi9rjMdPVvfr+dHJ1Fj/SB+Zmj0f2kaVQEWvmUrfhmBBAbsNgOwhW+zFlkk0PHHFHZdL6FJMZiUpejTXEVAi3Fk19NRyGfPYdV5gtbjmA8ZuUcLQrfxmLkuxdi175ifSDAcGBvcflaNbYeEPHN5kflBsN8ofWlwznAL6gjzkZT2TpV2HhB7Xm3yk/UmE+95t8ofjSBuI6769w//U/D+sE9IMPyq/hnO/Rl45fh8pBwi+yPdO/R9k/mf9V/Y3avSDDEEFahBFiMvEdc4jaONNMsKdDfDLu6VRlcVFS9xTqAGzgWAB10mycInsj3QTgUP2R7oHivyLLqtX7Uv6HzzFUK7sXam9yfYPkABoIkYKr/AJb/AIW+U+jfV6ewPd84JwCewP7fnJvpl7F+R9GNsxMAlFUrU6r1M2Z3VHUg+yraHKPfxmjh9qbNS3oYrThepWt5ZpYOzk4ZB5L85B2ansD+35wrA12ZT5njShNbbWyD62Hcnmc1/O8S22tlfZp1k7VZh8SRLR2ansL/AG/OR9V0/YH9v+6DZl7G+Yv5TOpbW2eDc1MU45My2/tUGJr4vZLEnLX15N+k0zsin7A/t/3RbbDpH/DXyX/dBsy9oX5UfRl0do4Ci29oGvvALBXINNlPrIwCg6i9j1Gx1lpBSe9WnWRrutRFd1Rqe7p1iFYMfbYekON/GMPR+kf8MeXyaKbo5S9g8eokf6oNmX0D5KswsZihTpiiHV3sVZ19UKSDkVvtHRbkaWUAX1mfSxrL6thpbTQ+7r7Z1DdGqfst5n/dAPRmn7Le/wCcR4JB34mWNoVh6QxANwCQKjrY8bWIt5SDtzEajOe/ONO680j0ZT78A9GF51Pd8ouzMO9AlalwD9PUGwJG6XQ9YvfWJrYOnUN6mODAcNLW7hewjf8AhhOdTy/SR/wyvtVPIfKHbl6NuQJp4KkFCriaY9ohfSbXrOfTlpEfU1E/46HzP+qN/wCGV51PL9IJ6Nr7T/h/SbRL0bcgCNh0v81PJv8AfKO0sI1P1cjJ1ELe3O4JJHwl49HB7T+X6SP+HR7T+X6QPE/QNyJhb88k/Avyh06zsbBVJ7KaH/TNkdHhzby/SSNggcGYd1/9sGzI25EVS2U5F3amvMBKZI8h+cuLs2iOIB8hAXZBH+JU82+UcmzbfbfxY/KOsf0bWjQo4lVUAAcSSbi7X520PDja/O8Z9PHIeYlOnh7c/O8MDulEqNaZYO0By+Ej6xHs/D5xBtyX3SLfu4m5NwbQxzc/cfnCG0GH2viPzlNcvsLGAr7Ce6dFnNRZGPbn/wC3+6AdoHjnt5+H2okMPYTyHzk7z7qeQ+c1mpDfrLrzHzPv9OCdqnm3gf8A7kKfuJ42hZPuqPD87TWwUgfrQ+03n+eae+sj7Tef/wBRi0TyXv8A2JBons8AflDyGkLO1PvP5k3/ALov6z++/np/7R24PMHwa/wnhTPLhw9FvlByGkIfaJ9tvxH5wRj+vO3Hn+seVbl3+i3yglW4/wCg/KDkCSK5x3Mt+IwfpY5t5mPyP+1N/hBNJzy/D+kAeBJxQ9pj4n5wDihzY+JjUptyHHl+kIIx6hy/ekBuCv8ASBzbzME1x973ywMO/Gw8h8oO5bkPIfKCmHgrmsPvQWrD73ZxlvdvyHkIH0d/u+Q+U1MPBSNUX4e8wWqDkfM/KaBwrfdHh+kWaDcfR/CPlBTNaKBcez7z8oO8HDLLxot2fhEA0m5dXsiambgpZh7M9vByEuNTfqB8gIJpvy9w+cFMPBVFQezPGoPZlnK/I+Q+cGz8j5D5wUFUIFQeyPISQ49ke6MOfhY9nD5yDn5H9+MA4BfsHkJGb7vuhln7f34z2ap2+YmCbwxjcx2SfprDr+MbT9Yxy+qe78xL2zn49FU4tuflIbFNzPkZbXh/V+Uk8B++cPIOPRUGLfmfEGEcU9v0Mt1Ps+EGpxP764QWvRU+k1Bz7LgwvpNXmfKXF9Ud08vA+ENBteim1ar2+XDwgmtV5fCWanXLKcD3QUC/oy89X9292sj+Lz7ePwl0er4xqdXcfiJqMmZmWrx8tReCy1R2X7tffNSpPVOA/fKCgWZW7qfu0n6PU4S+ITfKahrM36PU5meqYVwPW8peb84fXBSNbMz6M/tn3yforf5jeUt8u/8AMyKsFIPJTOHPAVD5QRhT1u3GWJXqfnNRuSDhfvsZDYS32z7oK8fCCfyg4DyScNzY+c8cL97+6JEFuPhBwbkb9HHX8YL4YW4jj1sYK8JL8POAbkj6OPaHZ6Rkbgc1H9RixxMkQDchGkOY98HddvxgH8/ynlmCf//Z" alt="Car Image">
+    </div>
+    <div class="product-description">
+        <u><h2>The Lamborghini Sián FKP 37 is a limited-production hybrid supercar that takes inspiration from both classic design and future technology.</h2></u>
+        <p>
+           <h2>Here's a breakdown of its features and specifications:</h2>
+
+        <h2>Powertrain</h2>
+          
+          A naturally-aspirated 6.5L V12 engine producing 785 horsepower (hp) and 720 Nm of torque.
+          An additional electric motor integrated into the gearbox adds 34 hp, bringing the total power output to a staggering 819 hp (or 602 kW). This makes the Sián the most powerful Lamborghini ever produced.
+          The electric motor utilizes supercapacitors for energy storage, a first for a production car. Supercapacitors offer better power delivery compared to traditional batteries, but with shorter range.
+        <h2>Performance</h2>
+          
+          With the combined powertrain, the Sián rockets from 0 to 100 km/h (0-62 mph) in a blistering 2.8 seconds.
+          The electronically limited top speed is an impressive 355 km/h (221 mph).
+        <h2>Design</h2>
+          
+          The Sián's design is based on the Lamborghini Aventador, but with a more aerodynamic and futuristic look.
+          Active aerodynamic elements on the front splitter and rear wing adjust to optimize downforce at different speeds.
+          Lamborghini has incorporated hexagon shapes throughout the design, referencing the company's founding in 1963.
+          Other noteworthy features
+          
+          All-wheel-drive system for enhanced handling and stability.
+          Regenerative braking system to capture energy and recharge the supercapacitors.
+          Lightweight materials used extensively throughout the car to keep weight down.
+        <h2>Limited edition</h2>
+          
+          Only 63 units of the Sián FKP 37 were produced, making it an incredibly exclusive and collectible car.
+          
+          </p>
+        <a href="product-page.html" class="btn">Learn More</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 PK Cars. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html

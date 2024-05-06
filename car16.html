@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Cars - Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Changed background color */
+            color: #333; /* Changed default text color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+            background-color: #444; /* Changed background color */
+            border-radius: 5px; /* Added border radius */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease; /* Added transition effect */
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Changed color on hover */
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-image img {
+            width: 90%;
+            height:650px;
+            border-radius: 5px;
+        }
+
+        .product-description {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .product-description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333; /* Changed heading color */
+        }
+
+        .product-description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666; /* Changed paragraph text color */
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>PK Cars</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEBUSEhMTFRUXFRcXEhUVGBUYFhgXFxUYGBYVFhcYHSggGBolGxYXITEhJSkrLy4uGCAzODMtNyktLisBCgoKDg0OFxAPFy0dHx0tLS0tLS0tKy0tLS0tKy0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tKy0tLS0tLS0tLS03Lf/AABEIAK4BIgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAYDBQcCAQj/xABOEAACAQIDBAcDBwgGBwkAAAABAgADEQQSIQUGMUEHEyJRYXGBMpGhFEJScrHB0SMzQ2KCkrLwFRZEk8LSY5Sis+Hk8Rc0RVNVc6PT4v/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAdEQEBAQABBQEAAAAAAAAAAAAAAREhAhIxQWFx/9oADAMBAAIRAxEAPwDuMREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERIW09q0aABqtYt7CAFna3HKo1NuZ4DnaBNiVOpvqoF/k9QdwZqQPqFYge+aytv9UB0ppbxJB+F4TYv8Tm1bpDrcqdIftMfukR+kDFHgKY9DBsdUiclO/OMPBkH7J/GfP6344/pFH7J/zQd0dbica2hvPjUps7YkgeC29xvpIewcLjsZSOIq4moqk/k0J1K30YsVYj0BtccINdxiclpbBqj9Nir/q1x/8AmZKIxS1DTTE4sMvJqqkeyrcwwIsw+I5Qa6tE53Sx+0041y/gaSVPiip9sz097sYn5ynQaxsfbptc2IFgXsbEaeIg1fYlUw++y6dbh6qXNrrlce64b/Zm/wBnbTo1xek6tbiODD6ynVfUQqZERAREQEREBERAREQEREBERAREQEREBERAREq29W9Yo3w+HIbEEa3F0orzqVO88gnEnuAJAZt5t5hQPU0Qr4gi9jfJSU8KlW2vkg1a3IXYULFY6zM5Y1KjW6yq3tHXQaaKgJNlFgL+MiNWN8iEszEtUdz2mY+1UqN/PIDkJnoCmmj4hGW+YL2VBbkWN7tbkJWPLZJgE+eS556kD0A++aXeU00CqigMTckcbDT4n7JtG2vhxxqp6G/2Su7QY1qrOpBW9l8hw/H1ki9WZwhUtedploprqLyVQw4GhI58xzmRFUG2Zb+YlYehhbAGTcJhLzJSp3AHdJOJrrRoPUbgqk2+wepsIVUduocRjKeCQ3FwapHdxb4ae+dRweFCIFUWAAAHgOH8+U5duc5p0cRtCoQHfs0ifpMfaA52F2I7hOj0tv4YlVFakWa5CqwZgApdjlU3NlVjbwhW1WjNJtk9Viab/SQf/G9j7+uH7s3xey5s2nilv8Zlb36xiLTw5zDO7vlAzez1bFtbADtBIVaFpiQsThAarU2vlrUiDbkyG1x+sVqD+7miwu/mEp00WoahdVAYKl+A01vY6WkXH9I2EJpstOuSlQNqqAEFWQj2+5yfMCE2LPs+ktakDUUZxdKvI50JR7EagXBI8CJBbA9ViFAZgChak40ZMrKHQsOIAdWAtqqVL3NjKzR6SKKVapWhUK1CrgFlFmy5G4X0IRD53759pb9/KsThqK4XXr1seszHK6tTqm2UadVUqE66Wvyg2OrbJxZqU+1bOpKvbvHP1BB9ZNlH3I2wzYmpRqWuV4jgWpnKbeYN/wBmXiRsiIgIiICIiAiIgIiICIiAiJT969uYmnVVKIUISAWzU7k8/aPZA74G62xvNhMKwXEV0psRcKbk277ATSVuk3Zi8K9/JX/CU3a24lbE13r1cbhizm/taAcAo8ALCRj0WE8cZh/3pWdq1Y3pWw6sVpUa1U8NAFF/M6/CQH6ScY+iYWjT7usdmPu7M1WG3CqJ2E2jQHhmQ+moPumTEdH1ZxZ9oUyPo5wF9VUAGDkqdJlcNZ8Rh0PMU6VR7eF9Rea+ntzBMzu9as71GzOVpMMzWA4k9wAA4ACwmdeiy39rofvD8J5xu4T0UOTF0MxuFsRe/eLi3vhOWs21itm6Z3q0za4GjNbvNM5reZErdc7PY9g1mPhh8Pf4qJqts7sYmg/5TtZm9rMGLEn6QJBPreT8A+Np0stKmVUXv2KebQ2JJIzHWE1hrYZFN6eHq+ZWkn2IZ5U1Pm02/arfcoWTXG1NbG2UsGH5HQqpZr6cgD7pKwGzts17LSYscoYhXCkAsVF9BbUHSVMaU7Ort+gX/bb7zC7Bqc8OfSnU/wAkuA3TxqFVxdR6Za1gKoe/HUkcOB93KajaeIwFFirVa1ZgbHISVB+szAH0vIuIWGwNFCDUwrm36rr/AIRLFsvbOCs1Kth6xQnVSWZLC1uyTY6i/Dn4SrvvHhB7OFc/Wq2+xTFPefC31whA/Vq3PuKCDVh31xuEqClTwihaaqcyqpXtGw8xZb93GV+nUNJDXp1slRMygEa2emabWaxFyrsLEfiNhV2hg3GdFuhFlTUVQba52tlUA92Yn4jSbQxFBwMqZbG+rs2ndy98FTxvNtSqoHWtlI0u9MaegE2y4vEV6NJcTiaV6THqwTVc2PG5C28NJr8PvcqKFGFwWgAuaRJNha5JbjMrb+PwFLCpfS6UKRYeKhzYkdxMGsrYFG44mmOWiVDw5z4dk0z/AGtf7p/xmWtv2yUk6tvytyG6zD4RexYHMVVTZrgcZgp9JOMB9ukfDqMP9yCVLj6diU+Pysf3L/jLRu+2Dw1NglV+scWqVsjZyOaILfkkuNQCSeZ0AmgxO/lauyPaivVg3QZqaOxPtuFuW00y8NLyfW6QsEFC9Q9V7flHRVpUi3IorsWA5docpFkixbJ2phqGIp1kdzlbUZCOyey3wJnX6NVXUMpBVgCpHAg8CJ+eh0g0WRlp4U06jCyMzKyAn5x0GoF7aHW151PokxT1Nn3dr5ajKvgAq6ff6yNzKusREKREQEREBERAREQEREDBjsUtKk9VvZRGdvJQSfsnIdvbe2Pi1C1a7ZTUUtYF9dStzTJNs1uQ8Z0ffupl2bij/oWHv0++fm7drFinVWqaNLFAVE/J0wUL5g6jMMuhBN+HI69xK2LbvbLdmb+lEuSSc1KqDcnXjh5nwG62zetUjHUK5uCKOoL9ygGit/K/4SLUfA3s2z9oIb8FTCH+LDXn35RspNWobSTzpbO++iIHQsNvFhlVE6nsPSqGpnKlUTLwayAscwZApPAXIIN5Qam6mzmJZdoYJQSSFNexUE3C/wDdjwGnE+ZnvEbxbLqLlq1NqOp+awwRGneFK39ZEbH7C+hjv3KA/hriBlO6OA/9RwP+sf8AKTbU92dhijTSptCjnuWqsjF1J4KoIVOAPcPamhGJ2F9DGj9lfuxM21DbWwhYJgcVUsoF+qoMSRxJLMxJJvxJgS9m7ubHGIU0sWHorZ6jDOAXVhkpk6kjUtpb2RLHidobFpoyHEix45Ri76G+jIwPHuM5DvbiKVXFAYegadOwIpBUVxcC4YILBtL8Ocgrgjb8yw8WYj7hKldbq7w7DsL1ajBdRlTFgAk8e1WAvfmZK2f0mbLwt+pTEOWI1y0xyA4l78ANTc6DuFuQVU6vDHRQalQAWJN1QXPM/OImtZuHnCOgb8b5VMQWdSVzXAAvoDy9FAF+8mUfZ+z6+IYrRpvUI1bKCQo72PBR4me9pVCcoHdPu0cawRcMptTTVgNA9T51RvpH5ovwCjvME5Sv6uOL9ZXwdMjiGxFJm8iKRax8DI1fZmUdmtQc9yPqfLMBeau8+gyNY2Gzqlmt3/bMOI0YzzSbtBvWZ8TSu005+0W8+3mdcPMq4WDUQT0JNGFmT5NCIStpMqJTH5yow8EQMR55nUfEzwiXZvCTae7NepTNUZRfVVY2Yjlx0Bty8Yq9MYnNEFTSqVGPMPTRLd1itRr+oHrO+dB+JvSxFPkGp1AfrqQf92PfPznSQq+VgQQbMDyPj6z9B9BQ7NY/qUvgagkakyurxESNkREBERAREQEREBERArHSVVy7Lr95Cgerr915+b8BtJqDMwYGqpV6bIuV8y8OsUcQQx7QvxvfhP0H0sK5wK5SNayKQeBzAqLnlqROE7Yp9ZUo4ahh6TutMPVLFVJaoM4QM5AACsDYc2MrNejvwGYtW2fg2ZiSzHDUSzE6klsoJJJveSaHSDQThgcOPq0Qv8Liaw7u4sf+HOf/AGzVb/dkiRquFqJo+BxKHmD8oX35oNWQ9JOHPtYJD5Gsv2Vp8/r9gjxwZHlXxg+yrKhUxFEaGnXXw6y38Ux/KaHdWH7dP/LBq4Nvjs86nDP/AKzjv/umHbfSZVZitCjQRQAobJnaygAWZ720EqZrYf8A0nr1R/wTC9AMpenewNmBy3HceyLWg1jFU1KjOwcltbJpx5X1sLeBkgYbn8mrepNvhTEw4ZGLZA2W/G75B6mbijg8GgvUqqzdwOb36EH3Qa1e12tkpgZciar3O5zMPskC/CbTaWJou7MDck3JIP8AIHhMOEq0Q4LglQDoBz5Qm/BX7Wc20Fx5jh8bSXsDZHXNmf2eQva9uJJ5KJr6pVmtTBAJA18T4S87G2czU2SkrHJTZmCnUqg9lT9Jm8uN+UJOEPGts5PybIp5FlFrHzUG3qZWNr7OFIhkbPTb2G5+Rtpfx5++dPwmMpNSrpRYtUWg+Eo0bAKahxJRKnVjsElKiMWt+je+kp+9Gw/klR8LnFQFMwtbsVVALpbloVbycQ0rOF1/nv8A+M2DCwuZq6T290nCvSan2yS97Be1YDv04kwzZy9fKAI+WL3iR+vp9w/cB+2ZExa8g/7IUSpjMuLB4XPkCZ7fEMATkqeeU2mL5Tf5lQ+bEfZPPysj2KaKw1uWuR46m0LjLsgqzAHW7Ekd4A4es6Emx1rUyr3NTqTVoIruhfRhZQpAzZmpPc5hY2txM5vse4q3NuF9CDxI7vKdB2bUC5cTSrCqKOdcP1qi/bIfXIWaoqPplXK2oFgDrFxQ94cM9KuUqEGohKOy6hitirX8VK+6d36DKfYrnkBTHxczje92GPyimDTZWqLTZlIszO71A75eRZhew75+h+i7durgsDlr2FWo2d1BByCwCoSNCQBc20uTxtcl9rhERI0REQEREBERAREQERECm9LT1l2ZUaiobKR1t1zEUyCrOvcykhs3IAmfmHbdfPiKrnm7W8gbL8AJ+z2UEEEXB0IPAjunNtrdDGAq1mrU3rUcxuaaZDTHflDLcX42vYX0sNJWbH5uF+6fqjcKs42XggFuPk1K5zAW7A5T87byYSphsZWwzF70qjILsdVB7DW7mUqfWT9ldJW0sOiUadcZEAREenRIAGgGbIG95hI/ShxDGwai59aRA97T8ybw7wYuhj8XTo4iulNcXiLU0qOtMXrOTZAbfCWzDdJ22MlNyuFK1BVZCyNwo+2WCPde4Tm20Mca1WpXdUzVKj1H0NszsWOXW9rk24wtrZf10x3Oux+sEb+IGQ8XvDXrMrVmDZQQLIiaHiDkAv6zx8kqZQ5ovlIuGyVApHeG5iYDTpsOIU+eh/4wn6yYpFdcymWPo42ngg74XH06PVVVIWu9NC9FiNGDkXUfzwlT6juZf3pjWgx5W84WcLVtLZNJXZErYdyCQHSvQFMjkwzOLeXKfd4KGFpYJVSrTOIZqYqU6T9auVA5NRql7KxLKMo+jfnKqcP+sJ8NE2vpbgDyuLXF/Ue+CYzbO/OLw0118BpL7s7D1vk/yjD4lKNWjULKjXvVFOmvZUgEH84wykWObW1pQMFo95eNhU8CKS4vGPiB1dTIqUGVWcjLUBuSDztxFhrcWg9t/sWg+FapXK0meopekoZBSXIopJVdgxyqb1TpZiHufCt7brpUwyVT28Q+KZsTVAIVjUWpYJfTLZbC30TwGW9p3lpLTo1Kztm6xM1GkGJWkbMgbLe700YLcFTra4JE029dR/kGGz0aFEORUp9RbIypSKlgMxt2qo8NdL6wjnVOnmHqB6WN/sEyjDseCj3E/ZPmFYrc3APiA3fyPnJ+HxpHGsR9Wml/RjqIW1gp4CqfZB9AP+szf0U49tsv1mC/babLDYrB/pWxNX9Vqtl9yi/xlh2VtnZVL2dn4dvGqalX4VGI+EJv1TDhaC+1VS/gS38N5kxmBREDulcK2iv1WVWPHss9rm3dOu7K6RqFIWo4bDUh3U6aJ/DIXSFvGu08CaOVRURxUpEH5yggr6qxHnaF4ckq4qmWBpoU0Ck342+cRbRvI28J0+tjKh2bUqP1dNtaeFChFRKL0y4SyAC7qBrxAca6WnITcGx0IOt+Rl73V3opLSpJWRmqUKgfDsvaJawVFZTo1gMoGnHnwgrY4vY2Ixe08MKCYiuiPhxUrMC+UDKz9bUACizNUGvHLP0pOfdH2KGHwx6xSK1ao1atzsWsFS/MhVUHvOY85cKW1kMixsYkdMWpmVagMK9xEQEREBERARE+QPsTwzTC9SBIvPhqCa6tirTX4jaZHAQKR0y7jNiiMbhFzVlXLXpj2qiD2WTvddRbmOGoAP58xKkMQQQQSCDoQRoQRyM/UeM2vV+aben4yk7y7Cp4ts9cF2HBuB944wjioxz5cpYlbEAEmwBNyAOABOvnrN/uVu2cdXHWuKWGQg1qjEC4/wDLp34uRp+qNTyBslfcShyD/vGQau5qDgGhHchvfgqKLTSrSVEUKiKRZVUWVQO4ATU7Q6QsD84o/mFP2zjNTdi3C8i1N32HfKndXRdqb57LfU4LCue9qNIn35byrbR3h2c17YDDD6q5f4SJXH2I3cZhbZDdxlxO6tlV2/hwAqYTDADhemrH1ZgSfUzVbc2w1daakALTvkVQFVQ1rgAaDgJ5bZjdxnn+j++8Yagpwll3WZHLIwJcKzYe1vzoXQWOhJ0tfmAeUrmIoMh7xyP4xhsQVYMpsRIrqG0cPUqYjBYTKVFKhTo1nYWBqOEdiwYcM6hix17R85W986mUJh0cOtNSlMqCFyZiSyqfZDEk27lXvnrCb2YmqoooM7sb2zVGBbhnKE5b25k2lj2ZuYzDPVJeoxu58TyH8/hB5cwTBOeUlUdiVG5Gdkwm5yj5s2+G3YQfNgyuKYfdOo3IzaYbcJ24kidrobCUfNk+jsjwhccbw3Rpfi7+k2eH6LaXznq+jTr1LZfhJdLZg7oMcoodFOD4sKrebn7pvdj9HuDoMHp0AGHBmLMR5Zibek6ImBA5TOuHAkVXaGybcpPo7Om3FMT1aFQqWDtJKUgJkiAEREBERAREQERED4VnhqImSIEZ8GDI9TZYM2MQNLU2GD3SO+7oPISxRAqz7rg8pgfdK/KXCIFIbc2/KYm3HvyEvkQOfNuCDyE8Ho7UzokQmOdf9mtM8YHRhQPGdFiDHPR0WYT5yk+sy0eivZw/s1M/Wufvl9iDFZwG5mGo/mqNGn35EVb+ZA1mxTYqCbWIVAXZSCZVwKDlJUQMQw6jlPYpjunqIHy0+xEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERED/9k=" alt="Car Image">
+    </div>
+    <div class="product-description">
+        <u><h2>2023 Toyota Land Cruiser: Legendary Adventure Redefined</h2></u>
+        <p>
+           <h2>Introduction </h2>
+        The 2023 Toyota Land Cruiser isn’t just an SUV; it’s a legacy of rugged exploration and unwavering reliability. Whether you’re navigating off-road trails or cruising on the highway, the Land Cruiser promises an exhilarating experience.
+        </h2> Striking Design:</h2>
+        •	The Land Cruiser combines timeless styling with modern elements:
+        o	A bold front grille exudes confidence.
+        o	Square side mirrors and athletic fender flares enhance its rugged appeal.
+        </h2>Spacious Interior:</h2>
+        •	Step inside, and you’ll find comfort and convenience:
+        o	Ample seating for up to eight passengers.
+        o	Thoughtful storage solutions for your gear.
+        </h2>Advanced Safety Features:
+        •	Toyota Safety Sense suite includes:
+        o	Pre-collision warning.
+        o	Adaptive cruise control.k
+        o	Lane departure alert.
+        o	And more, ensuring peace of mind on every journey.
+        </h2>Legendary Performance:</h2>
+        •	Land Cruiser’s full-time 4-wheel-drive system provides traction on various surfaces.
+        •	An electronically controlled 2-speed transfer case lets you select the right torque for your driving conditions.
+        </h2>Towing Capability:</h2>
+        •	With a tremendous towing capacity, you can bring more along for the adventure.
+        <a href="product-page.html" class="btn">Learn More</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 PK Cars. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html

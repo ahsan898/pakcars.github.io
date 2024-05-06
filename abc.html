@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Display</title>
+<style>
+  .product {
+    cursor: pointer;
+  }
+  .product-description {
+    display: none;
+  }
+</style>
+<script>
+  function showDescription(productId) {
+    // Hide all descriptions
+    var descriptions = document.getElementsByClassName('product-description');
+    for (var i = 0; i < descriptions.length; i++) {
+      descriptions[i].style.display = 'none';
+    }
+    // Show the selected product's description
+    document.getElementById('desc-' + productId).style.display = 'block';
+  }
+</script>
+</head>
+<body>
+
+<div class="product" onclick="showDescription(1)">
+  <img src="path-to-your-product-image.jpg" alt="Product Image">
+  <p>Product 1</p>
+</div>
+
+<div id="desc-1" class="product-description">
+  <h3>Product 1 Description</h3>
+  <p>This is the description for product 1.</p>
+  <img src="path-to-your-product-image.jpg" alt="Product Image">
+</div>

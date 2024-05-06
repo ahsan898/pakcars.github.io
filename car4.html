@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Cars - Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Changed background color */
+            color: #333; /* Changed default text color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+            background-color: #444; /* Changed background color */
+            border-radius: 5px; /* Added border radius */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease; /* Added transition effect */
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* Changed color on hover */
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+        .product-image img {
+            width: 90%;
+            height:650px;
+            border-radius: 5px;
+        }
+
+        .product-description {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .product-description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333; /* Changed heading color */
+        }
+
+        .product-description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666; /* Changed paragraph text color */
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>PK Cars</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="data:image/jpeg;base64,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">
+    </div>
+    <div class="product-description">
+        <u><h2>Honda City 2023: Where Style Meets Practicality</h2></u>
+        <p>
+            <h2>Introduction:</h2>
+            The Honda City 2023 is a B-segment sedan that seamlessly blends elegance, reliability, and modern features. Whether you’re navigating city streets or embarking on a road trip, the City promises a comfortable and efficient ride.
+            
+            <h2>Key Features:</h2>
+            <h2>Petrol Engine Options:</h2>
+            The City offers petrol variants powered by a 1.5-liter naturally-aspirated inline-four DOHC i-VTEC engine.
+            This engine delivers 121 PS (119 hp) at 6,600 rpm and 145 Nm of torque at 4,300 rpm.
+            Paired with a CVT, it ensures smooth acceleration and responsive performance.
+            It combines a 1.5-liter naturally-aspirated DOHC i-VTEC four-cylinder Atkinson cycle engine (rated at 98 PS and 127 Nm) with an electric motor (rated at 109 PS and 253 Nm).
+            The lithium-ion battery charges via regenerative braking, enhancing fuel efficiency.
+            
+            <h2>Stylish Exterior Design:</h2>
+            The City boasts a sleek silhouette with updated styling cues.
+            LED headlamps, LED daytime running lights (DRLs), and fog lamps enhance visibility.
+            Carbon-wrapped finish on the front and rear bumpers adds a touch of sophistication.
+            
+            <h2>Comfortable Interior:</h2>
+            Step inside the City, and you’ll find a well-designed cabin.
+            Comfortable seating for five passengers, with ample legroom.
+            The City offers practical storage spaces and a user-friendly layout.
+            
+            <h2>Advanced Safety Features:</h2>
+            All variants come equipped with Honda Sensing as standard.
+            Safety features include Forward Collision Warning, Collision Mitigation Braking System (autonomous emergency braking), Lane Keep Assist System, Road Departure Mitigation, Lane Departure Warning, Adaptive Cruise Control, Lead Car Departure Notification, and Auto High Beam.
+            
+            <h2>Entertainment and Connectivity:</h2>
+            Enjoy an audio system with Bluetooth connectivity and multiple speakers.
+            The RS variant includes an eight-speaker stereo system for an immersive experience.
+            
+            
+            
+          </p>
+        <a href="product-page.html" class="btn">Learn More</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 PK Cars. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html

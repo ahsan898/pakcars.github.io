@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK Cars - Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact-info {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        .contact-info h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .comment-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .comment-box h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .comment-box form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-3xl font-semibold">PK Cars</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact .html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Our Contact Information</h3>
+                    <ul>
+                        <li>Email: info@pkcars.com</li>
+                        <li>Phone: +1234567890</li>
+                        <li>Address: 123 Main Street, City, Country</li>
+                    </ul>
+                </div>
+                <!-- Comment Box -->
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="comment">Comment</label>
+                        <textarea name="comment" id="comment" rows="5" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto">
+            <p>&copy; 2024 PK Cars. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
